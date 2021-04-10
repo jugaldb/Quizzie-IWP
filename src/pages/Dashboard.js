@@ -175,3 +175,17 @@ function Dashboard(props) {
 	}
 }
 
+function TabPanel(props) {
+	return (
+		<div
+			role="tabpanel"
+			hidden={props.value !== props.index}
+			id={`simple-tabpanel-${props.index}`}
+			aria-labelledby={`simple-tab-${props.index}`}
+		>
+			<div>{props.children}</div>
+		</div>
+	)
+}
+
+export default Dashboard;
