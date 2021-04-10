@@ -40,3 +40,45 @@
 	width: 100%;
 }
 
+.date-time-select {
+	text-align: center !important;
+}
+
+.date-time-select .MuiInputBase-input {
+	color: black !important;
+}
+
+.time-slider {
+	width: 50% !important;
+}
+
+.MuiSlider-root {
+	color: #2980b9 !important;
+}
+
+.type-select {
+	width: 30% !important;
+}
+
+.type-select .MuiInputBase-input {
+	color: black !important;
+}
+
+.create-btn {
+	width: 30% !important;
+	margin-top: 10% !important;
+	margin-bottom: 2% !important;
+}
+
+@media screen and (max-width:520px) {
+	.create-btn {
+		font-size: 0.7rem !important;
+		width: 40% !important;
+	}
+}
+
+.create-subtitle {
+	text-align: center !important;
+	padding: 0 20% !important;
+	font-size: 0.8rem !important;
+}
