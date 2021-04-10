@@ -24,3 +24,27 @@
 	text-align: center;
 }
 
+.dash-section {
+	background-color: white !important;
+	width: 100% !important;
+	/* min-height: 80vh !important; */
+}
+
+.bg-white {
+	background-color: white !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+	color: #2980b9 !important;
+	font-weight: bold !important;
+}
+
+.MuiTabs-indicator {
+	background-color: #2980b9 !important;
+}
+
+@media screen and (max-width: 500px) {
+	.dash-head {
+		font-size: 1.5rem !important;
+	}
+}
