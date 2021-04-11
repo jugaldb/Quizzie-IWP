@@ -8,6 +8,7 @@ import RegisterPage from "./pages/RegisterPage";
 import Quiz from "./pages/Quiz";
 import ErrorPage from "./pages/ErrorPage";
 import InfoContext from "./context/InfoContext";
+import ForgotPassword from "./pages/ForgotPassword";
 import Dashboard from "./pages/Dashboard";
 import CreateQuiz from "./pages/CreateQuiz";
 import EditQuiz from "./pages/EditQuiz";
@@ -85,6 +86,11 @@ function App() {
 					<Route exact path="/verify/:type" component={VerifyMail} />
 					<Route exact path="/quiz/" component={Quiz} />
 					<Route exact path="/login/:type" component={LoginPage} />
+					<Route
+						exact
+						path="/forgotPassword/:type"
+						component={ForgotPassword}
+					/>
 					<Route path="*">
 						<ErrorPage />
 					</Route>

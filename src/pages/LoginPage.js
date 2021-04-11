@@ -53,8 +53,6 @@ function LoginPage(props) {
 	const mailErrorText = "Email cannot be empty";
 	const passwordErrorText = "Password cannot be empty";
 
-	const backend = process.env.REACT_APP_BACKEND_URL;
-
 	const handleEmailChange = (event) => {
 		setEmailChanged(true);
 		changeEmail(event.target.value);
@@ -112,7 +110,7 @@ function LoginPage(props) {
 
 			if (type === "organizer") lType = "admin";
 
-			let url = `${backend}/${lType}/login`;
+			let url = `https://quizzie-api.herokuapp.com/${lType}/login`;
 			let token = await executeRecaptcha("login_page");
 
 			let data = {
@@ -177,136 +175,146 @@ function LoginPage(props) {
 	return isLoading ? (
 		<Loading />
 	) : (
-			<Container className="login-page">
-				<div className="login-form">
-					<Typography variant="h3" color="primary" className="login-head">
-						{type === "user"
-							? "Login Now"
-							: type === "organizer"
-								? "Organizer Login"
-								: "Owner Login"}
-					</Typography>
-					<br />
-					{didLogin === false ? (
-						<Alert severity="error">{errorText}</Alert>
-					) : null}
-					{notVerified ? (
-						<Alert severity="error">
-							Your email is not verified.
-							<Link
-								className="link"
-								style={{ color: "red" }}
-								to={{
-									pathname: `/verify/${type}`,
-									state: {
-										email: verifyMail,
-										sendCode: true,
-									},
-								}}
-							>
-								Click here to verify...
-						</Link>
-						</Alert>
-					) : null}
-					{type !== "owner" ? (
-						<a
-							href={
-								type === "user"
-									? `${backend}/auth/google`
-									: `${backend}/auth/admin/google`
-							}
-							className="google-link"
-						>
-							<div className="google-btn">
-								<div className="google-icon-wrapper">
-									<img
-										className="google-icon"
-										src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-									/>
-								</div>
-								<p className="btn-text">
-									<b>Sign in with Google</b>
-								</p>
-							</div>
-						</a>
-					) : null}
-					<form className="form">
-						<TextInput
-							error={
-								emailChanged
-									? emailError.length === 0
-										? false
-										: true
-									: false
-							}
-							helperText={
-								emailChanged
-									? emailError.length === 0
-										? null
-										: emailError
-									: null
-							}
-							id="email"
-							label="Email"
-							type="email"
-							className="form-input"
-							variant="outlined"
-							value={email}
-							onChange={handleEmailChange}
-							onKeyPress={keyPress}
-						></TextInput>
-						<br />
-						<TextInput
-							error={
-								passwordChanged
-									? passwordError.length === 0
-										? false
-										: true
-									: false
-							}
-							helperText={
-								passwordChanged
-									? passwordError.length === 0
-										? null
-										: passwordError
-									: null
-							}
-							id="password"
-							type={showPassword ? "text" : "password"}
-							label="Password"
-							className="form-input"
-							variant="outlined"
-							value={password}
-							onChange={handlePasswordChange}
-							onKeyPress={keyPress}
-							InputProps={{
-								endAdornment: (
-									<InputAdornment position="end">
-										<IconButton
-											aria-label="show password"
-											onClick={togglePasswordVisibility}
-											edge="end"
-										>
-											{showPassword ? (
-												<Visibility />
-											) : (
-													<VisibilityOff />
-												)}
-										</IconButton>
-									</InputAdornment>
-								),
+		<Container className="login-page">
+			<div className="login-form">
+				<Typography variant="h3" color="primary" className="login-head">
+					{type === "user"
+						? "Login Now"
+						: type === "organizer"
+						? "Organizer Login"
+						: "Owner Login"}
+				</Typography>
+				<br />
+				{didLogin === false ? (
+					<Alert severity="error">{errorText}</Alert>
+				) : null}
+				{notVerified ? (
+					<Alert severity="error">
+						Your email is not verified.
+						<Link
+							className="link"
+							style={{ color: "red" }}
+							to={{
+								pathname: `/verify/${type}`,
+								state: {
+									email: verifyMail,
+									sendCode: true,
+								},
 							}}
-						></TextInput>
-					</form>
-					<Button className="login-btn" onClick={handleSubmit}>
-						Login
-				</Button>
-					<Link to={`/register/${type}`} className="link register-link">
-						Don't have an account? Join the Quizzie now!
-				</Link>
+						>
+							Click here to verify...
+						</Link>
+					</Alert>
+				) : null}
+				{type !== "owner" ? (
+					<a
+						href={
+							type === "user"
+								? `/dashboard?type=${type}` 
+								: `/dashboard?type=admin`
+						}
+						className="google-link"
+					>
+						<div className="google-btn">
+							<div className="google-icon-wrapper">
+								<img
+									className="google-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+								/>
+							</div>
+							<p className="btn-text">
+								<b>Sign in with Google</b>
+							</p>
+						</div>
+					</a>
+				) : null}
+				<form className="form">
+					<TextInput
+						error={
+							emailChanged
+								? emailError.length === 0
+									? false
+									: true
+								: false
+						}
+						helperText={
+							emailChanged
+								? emailError.length === 0
+									? null
+									: emailError
+								: null
+						}
+						id="email"
+						label="Email"
+						type="email"
+						className="form-input"
+						variant="outlined"
+						value={email}
+						onChange={handleEmailChange}
+						onKeyPress={keyPress}
+					></TextInput>
+					<br />
+					<TextInput
+						error={
+							passwordChanged
+								? passwordError.length === 0
+									? false
+									: true
+								: false
+						}
+						helperText={
+							passwordChanged
+								? passwordError.length === 0
+									? null
+									: passwordError
+								: null
+						}
+						id="password"
+						type={showPassword ? "text" : "password"}
+						label="Password"
+						className="form-input"
+						variant="outlined"
+						value={password}
+						onChange={handlePasswordChange}
+						onKeyPress={keyPress}
+						InputProps={{
+							endAdornment: (
+								<InputAdornment position="end">
+									<IconButton
+										aria-label="show password"
+										onClick={togglePasswordVisibility}
+										edge="end"
+									>
+										{showPassword ? (
+											<Visibility />
+										) : (
+											<VisibilityOff />
+										)}
+									</IconButton>
+								</InputAdornment>
+							),
+						}}
+					></TextInput>
+				</form>
+				<div className="forgot-section">
+					{type === "owner" ? null : (
+						<Link
+							to={`/forgotPassword/${type}`}
+							className="link forgot-pass"
+						>
+							Forgot your password?
+						</Link>
+					)}
 				</div>
-			</Container>
-		);
+				<Button className="login-btn" onClick={handleSubmit}>
+					Login
+				</Button>
+				<Link to={`/register/${type}`} className="link register-link">
+					Don't have an account? Join the Quizzie now!
+				</Link>
+			</div>
+		</Container>
+	);
 }
 
 export default LoginPage;

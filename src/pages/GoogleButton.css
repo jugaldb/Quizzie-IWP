@@ -38,7 +38,7 @@
 	font-size: 12px;
 	letter-spacing: 0.2px;
 	font-family: "Montserrat", sans-serif;
-}
+} 
 
 .google-btn:hover {
 	box-shadow: 0 0 6px #4285f4;
@@ -47,3 +47,4 @@
 .google-btn:active {
 	background: #1669f2;
 }
+

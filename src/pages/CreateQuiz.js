@@ -5,6 +5,7 @@ import {
 	Typography,
 	Grid,
 	Slider,
+	InputLabel,
 	Select,
 	MenuItem,
 	Button,
@@ -19,10 +20,13 @@ import {
 import DateFnsUtils from "@date-io/date-fns";
 import axios from "axios";
 import { Redirect } from "react-router";
-import Loading from "./Loading";
+import Loading from "../pages/Loading";
 import { Alert } from "@material-ui/lab";
-import { AccessAlarm } from "@material-ui/icons";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { AccessAlarm, FlashAutoOutlined } from "@material-ui/icons";
+import {
+	useGoogleRecaptcha,
+	useGoogleReCaptcha,
+} from "react-google-recaptcha-v3";
 
 function CreateQuiz() {
 	const [quizName, setQuizName] = useState("");
@@ -35,9 +39,8 @@ function CreateQuiz() {
 	const [redirectEdit, setRedirectEdit] = useState(false);
 	const [quizId, setQuizId] = useState("");
 
-	const backend = process.env.REACT_APP_BACKEND_URL;
-
 	const [error, setError] = useState(false);
+	const [nameError, setNameError] = useState(false);
 
 	const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -58,46 +61,13 @@ function CreateQuiz() {
 	};
 
 	const handleSubmit = async () => {
-		setLoading(true);
-		let token = localStorage.getItem("authToken");
-		let url = `${backend}/quiz/createQuiz`;
+		// setLoading(true);
+		setNameError(false)
 
-		let captcha = await executeRecaptcha("create_quiz");
-
-		let data = {
-			quizName: quizName,
-			scheduledFor: quizDate.getTime(),
-			quizDuration: duration,
-			quizType: type,
-			captcha: captcha,
-		};
-
-		try {
-			await axios
-				.post(url, data, {
-					headers: {
-						"auth-token": token,
-					},
-				})
-				.then((res) => {
-					setQuizId(res.data.result._id);
-					setLoading(false);
-					setRedirectEdit(true);
-				});
-		} catch (error) {
-			console.log(error);
-			setLoading(false);
+		if(quizName == ''){
+			setNameError(true)
 		}
 	};
-
-	useEffect(() => {
-		let token = localStorage.getItem("authToken");
-		if (token === null) {
-			setLoading(false);
-			setRedirect(true);
-			return;
-		}
-	}, []);
 
 	if (loading) {
 		return <Loading />;
@@ -115,6 +85,8 @@ function CreateQuiz() {
 					<div className="create-form-inputs">
 						<TextInput
 							variant="outlined"
+							error={nameError}
+							helperText={nameError?"Please enter a name":""}
 							label="Quiz Name"
 							value={quizName}
 							onChange={onQuizNameChange}
