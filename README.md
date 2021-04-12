@@ -1,6 +1,13 @@
 <code>
   <h1 align="center">Quizzie - The Quiz Management System</h1>
 </code>
+
+<div align="center">
+  <img src="https://img.shields.io/github/repo-size/jugaldb/Quizzie-IWP?logo=github" hspace="5">
+  <img src="https://img.shields.io/github/license/jugaldb/Quizzie-IWP" hspace="5">
+  <img src="https://img.shields.io/github/last-commit/jugaldb/Quizzie-IWP?logo=git">
+</div>
+<br>
 <p align="center">
   This project is a complete online quiz management platform with a plethora of features for teachers and students. It provides all the basic functionalities of a quiz portal like timer, scoring, ranking etc. alongside analysis of results from the students on the teacher dashboard, summary of tests for the student, Login and signup using a Google account for both teacher and student.It provides a smooth user interface for both the teachers and students to create and attempt different kinds of quizzes seamlessly.
 
@@ -25,7 +32,7 @@ Any contributions you make are **greatly appreciated**.
 <br>
 
 ## License
-The project is distributed under the MIT License. See [LICENSE](https://github.com/) for more information.
+The project is distributed under the MIT License. See [LICENSE](https://github.com/jugaldb/Quizzie-IWP/blob/master/LICENSE) for more information.
 
 <br>
 
