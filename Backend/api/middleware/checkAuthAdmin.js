@@ -10,4 +10,12 @@ module.exports = function (req, res, next) {
     // console.log(req.user);
     if (req.user.userType === "Admin") {
       next();
-    
+    } else {
+      res.status(409).json({
+        message: "not an Admin",
+      });
+    }
+  } catch (err) {
+    res.status(400).send({ error: "auth failed, check auth-token" });
+  }
+};
