@@ -10,4 +10,10 @@ module.exports = function (req, res, next) {
     // console.log(req.user);
     if (req.user.userType === "Owner") {
       next();
-    } 
+    } else {
+      res.status(409).json({
+        message: "not an owner",
+      });
+    }
+  } 
+};
