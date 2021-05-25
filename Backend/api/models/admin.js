@@ -9,7 +9,9 @@ const adminSchema = mongoose.Schema({
   name: { type: String, required: true },
   googleId: { type:Number },
 	email: {
-		
+		type: String,
+		required: true,
+		match: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
 	},
 	
 });
