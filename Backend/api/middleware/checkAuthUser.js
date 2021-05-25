@@ -15,5 +15,7 @@ module.exports = function (req, res, next) {
         message: "not an User",
       });
     }
-  } 
+  } catch (err) {
+    res.status(400).send({ error: "auth failed, check auth-token" });
+  }
 };
