@@ -8,6 +8,8 @@
   <img src="https://img.shields.io/github/last-commit/jugaldb/Quizzie-IWP?logo=git">
 </div>
 <br>
+
+
 <p align="center">
   This project is a complete online quiz management platform with a plethora of features for teachers and students. It provides all the basic functionalities of a quiz portal like timer, scoring, ranking etc. alongside analysis of results from the students on the teacher dashboard, summary of tests for the student, Login and signup using a Google account for both teacher and student.It provides a smooth user interface for both the teachers and students to create and attempt different kinds of quizzes seamlessly.
 
@@ -17,6 +19,51 @@
 
 <p  align="center"><img width="1000" src = "https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/ss.png"></p>
 
+<br>
+
+---
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/10968840/SzzoZF12)
+
+<br>
+
+## Features
+- Stats view for detailed examination
+- Secure and foolproof
+- Users can signup/sign in using Google to make the flow easier
+- Detailed ananlysis of quiz for both organizers and users
+<br>
+<br>
+
+## Instructions to run
+
+```
+$ git clone https://github.com/jugaldb/Quizzie-IWP
+$ cd Quizzie-IWP
+$ npm install
+$ npm run dev
+```
+<br>
+
+## UI Screenshots
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/5create%20quiz%20page.png" alt="Project Screenshots">
+
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/10SD%20quizzes.png" alt="Project Screenshots">
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/12SD%20quizzes%20float%20banner2.png" alt="Project Screenshots">
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/15SD%20History.png" alt="Project Screenshots">
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/13quiz%20ongoing.png" alt="Project Screenshots">
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/4OD%20quizzes.png" alt="Project Screenshots">
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/6edit%20quiz%20page%20add%20Q.png" alt="Project Screenshots">
+<br>
+<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/16Results.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
+<br>
 <br>
 
 ## Contributing
@@ -32,6 +79,8 @@ Any contributions you make are **greatly appreciated**.
 <br>
 
 ## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)<br>
+
 The project is distributed under the MIT License. See [LICENSE](https://github.com/jugaldb/Quizzie-IWP/blob/master/LICENSE) for more information.
 
 <br>
