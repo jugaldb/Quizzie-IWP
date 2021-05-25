@@ -13,7 +13,26 @@ const adminSchema = mongoose.Schema({
 		required: true,
 		match: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
 	},
-	
+	password: { type: String},
+
+	mobileNumber: {
+		type: Number,
+		match: /^([7-9][0-9]{9})$/g,
+	},
+	quizzes: [
+		{
+			quizId: { type: mongoose.Schema.Types.ObjectId, ref: "Quiz" },
+		},
+  ],
+  token: {
+		type: String,
+	},
+
+	passResetKey: { type: String },
+	passKeyExpires: { type: Number },
+	verificationKey: { type: String },
+	verificationKeyExpires: { type: Number },
+	isEmailVerified: { type: Boolean ,default:false},
 });
 
 module.exports = mongoose.model("Admin", adminSchema);
