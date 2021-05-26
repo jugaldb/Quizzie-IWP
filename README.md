@@ -45,22 +45,6 @@ $ npm run dev
 <br>
 
 ## UI Screenshots
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/5create%20quiz%20page.png" alt="Project Screenshots">
-
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/10SD%20quizzes.png" alt="Project Screenshots">
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/12SD%20quizzes%20float%20banner2.png" alt="Project Screenshots">
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/15SD%20History.png" alt="Project Screenshots">
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/13quiz%20ongoing.png" alt="Project Screenshots">
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/4OD%20quizzes.png" alt="Project Screenshots">
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/6edit%20quiz%20page%20add%20Q.png" alt="Project Screenshots">
-<br>
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/16Results.png" alt="Project Screenshots">
 <br>
 <img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
 <br>
