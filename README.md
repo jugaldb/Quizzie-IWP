@@ -27,10 +27,10 @@
 <br>
 
 ## Features
-- Stats view for detailed examination
-- Secure and foolproof
-- Users can signup/sign in using Google to make the flow easier
-- Detailed ananlysis of quiz for both organizers and users
+- Stats view for detailed examination.
+- Secure and foolproof.
+- Users can signup/sign in using Google to make the flow easier.
+- Detailed analysis of quiz for both organizers and users.
 <br>
 <br>
 
