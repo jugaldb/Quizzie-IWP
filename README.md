@@ -45,8 +45,6 @@ $ npm run dev
 <br>
 
 ## UI Screenshots
-<img src="https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/5create%20quiz%20page.png" alt="Project Screenshots">
-
 <br>
 <img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
 <br>
