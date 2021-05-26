@@ -9,7 +9,33 @@ const QuizSchema = new mongoose.Schema({
 	quizCode: { type: String },
 	adminId: { type: mongoose.Schema.Types.ObjectID, ref: "Admin" },
 	quizType: { type: String },
-	
+	usersParticipated: [
+		{
+			userId: { type: mongoose.Schema.Types.ObjectID, ref: "User" },
+			marks:{type:Number},
+			responses:[],
+      timeEnded:{type:Number},
+      timeStarted:{type:Number}
+		},
+	],
+	usersEnrolled: [
+		{
+			userId: { type: mongoose.Schema.Types.ObjectID, ref: "User" },
+		},
+	],
+	scheduledFor: { type: String },
+	scheduledForString: { type: String },
+	quizDuration: {
+		type: String,
+	},
+	quizStatus: {
+		type: Number,
+		default: 0,
+  },
+  quizRestart:{
+    type: Number,
+    default:0
+  }
 });
 
 module.exports = mongoose.model("Quiz", QuizSchema);
