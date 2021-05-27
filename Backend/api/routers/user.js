@@ -402,6 +402,7 @@ router.get(
 			})
 			.exec()
 			.then((result) => {
+				
 				res.status(200).json({
 					result: result.quizzesGiven,
 				});

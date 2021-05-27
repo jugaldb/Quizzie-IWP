@@ -43,12 +43,9 @@ router.get(
 		var name = encodeURIComponent(req.user.name);
 		res.redirect(
 			303,
-			"https://se.jugaldb.com/?name=" + name + "&token=" + token
+			"https://quizzie.codechefvit.com/?name=" + name + "&token=" + token
 		);
-		
 	}
 );
-
-
 
 module.exports = router;
