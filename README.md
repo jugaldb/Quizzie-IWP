@@ -1,84 +1,85 @@
-<code>
-  <h1 align="center">Quizzie - The Quiz Management System</h1>
-</code>
-
-<div align="center">
-  <img src="https://img.shields.io/github/repo-size/jugaldb/Quizzie-IWP?logo=github" hspace="5">
-  <img src="https://img.shields.io/github/license/jugaldb/Quizzie-IWP" hspace="5">
-  <img src="https://img.shields.io/github/last-commit/jugaldb/Quizzie-IWP?logo=git">
-</div>
-<br>
 
 
-<p align="center">
-  This project is a complete online quiz management platform with a plethora of features for teachers and students. It provides all the basic functionalities of a quiz portal like timer, scoring, ranking etc. alongside analysis of results from the students on the teacher dashboard, summary of tests for the student, Login and signup using a Google account for both teacher and student.It provides a smooth user interface for both the teachers and students to create and attempt different kinds of quizzes seamlessly.
+# Quizzie
 
-</p>
-<br>
-<br>
-
-<p  align="center"><img width="1000" src = "https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/ss.png"></p>
-
-<br>
+Open Sourced Quiz Portal which can be used for any event.
 
 ---
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/10968840/SzzoZF12)
 
-<br>
+
+
 
 ## Features
-- Stats view for detailed examination.
-- Secure and foolproof.
-- Users can signup/sign in using Google to make the flow easier.
-- Detailed analysis of quiz for both organizers and users.
+- Stats view for detailed examination
+- Secure and foolproof
+- Users can signup/sign in using Google to make the flow easier
+- Detailed ananlysis of quiz for both organizers and users
+
+
+
+
+## Screenshots
+<img src="https://i.ibb.co/1Q0D9vX/home-screen.png" alt="Project Screenshots">
+
 <br>
+<img src="https://i.ibb.co/T14Nz0Y/Create-quiz.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/WBDvYdq/Screenshot-101.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/jVY4mfc/Screenshot-94.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/VxDMtwh/Screenshot-95.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/NYJKsLX/Screenshot-96.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/nbLLq0s/Screenshot-97.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/Xt1R8rY/Screenshot-98.png" alt="Project Screenshots">
+<br>
+<img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
 <br>
 
 ## Instructions to run
 
 ```
-$ git clone https://github.com/jugaldb/Quizzie-IWP
-$ cd Quizzie-IWP
+$ git clone https://github.com/Quizzie-SE/quizzie-se-frontend
+$ cd quizzie
 $ npm install
 $ npm run dev
 ```
-<br>
 
-## UI Screenshots
-<br>
-<img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
-<br>
-<br>
+## Contributors
+<table>
+<tr align="center">
 
-## Tech Stacks / Tools used
 
-<p>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/nodejs.png" height=40 hspace=20>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/typescript.png" height=40 hspace=20>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/css.png" height=40 hspace=20>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/html.png" height=40 hspace=20>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/mongodb.png" height=40 hspace=20>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/javascript.png" height=40 hspace=20>
+<td>
+
+Jugal Bhatt
+
+<p align="center">
+<img src = "https://i.ibb.co/ncMD01G/Jugal-Bhatt.jpg" width="150" height="150" alt="Jugal Bhatt (Insert Your Image Link In Src">
 </p>
+<p align="center">
+<a href = "https://github.com/jugaldb"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/jugal-bhatt14/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
 
-<br>
 
-## Contributing
 
-Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
-4. Push to the Branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
 
-<br>
+
+
+</tr>
+  </table>
 
 ## License
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)<br>
 
-The project is distributed under the MIT License. See [LICENSE](https://github.com/jugaldb/Quizzie-IWP/blob/master/LICENSE) for more information.
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-<br>
 
