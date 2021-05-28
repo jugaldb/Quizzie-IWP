@@ -1,5 +1,4 @@
 /* Copy of createQuiz page */
-//imports
 import React, { useState, useEffect } from "react";
 import "./CreateQuiz.css";
 import {
