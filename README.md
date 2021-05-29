@@ -1,83 +1,84 @@
-<p align="center"><a href="http://www.codechefvit.com" target="_blank"><img src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo-3.png" title="CodeChef-VIT" alt="Codechef-VIT"></a>
+<code>
+  <h1 align="center">Quizzie - The Quiz Management System</h1>
+</code>
+
+<div align="center">
+  <img src="https://img.shields.io/github/repo-size/jugaldb/Quizzie-IWP?logo=github" hspace="5">
+  <img src="https://img.shields.io/github/license/jugaldb/Quizzie-IWP" hspace="5">
+  <img src="https://img.shields.io/github/last-commit/jugaldb/Quizzie-IWP?logo=git">
+</div>
+<br>
+
+
+<p align="center">
+  This project is a complete online quiz management platform with a plethora of features for teachers and students. It provides all the basic functionalities of a quiz portal like timer, scoring, ranking etc. alongside analysis of results from the students on the teacher dashboard, summary of tests for the student, Login and signup using a Google account for both teacher and student.It provides a smooth user interface for both the teachers and students to create and attempt different kinds of quizzes seamlessly.
+
 </p>
+<br>
+<br>
 
-# Quizzie
+<p  align="center"><img width="1000" src = "https://github.com/jugaldb/Quizzie-IWP/blob/master/Design/ss.png"></p>
 
-Open Sourced Quiz Portal which can be used for any event.
+<br>
 
 ---
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/10968840/SzzoZF12)
 
-
-
+<br>
 
 ## Features
-- Stats view for detailed examination
-- Secure and foolproof
-- Users can signup/sign in using Google to make the flow easier
-- Detailed ananlysis of quiz for both organizers and users
-
-
-
-
-## Screenshots
-
+- Stats view for detailed examination.
+- Secure and foolproof.
+- Users can signup/sign in using Google to make the flow easier.
+- Detailed analysis of quiz for both organizers and users.
+<br>
+<br>
 
 ## Instructions to run
 
 ```
-$ git clone https://github.com/CodeChefVIT/quizzie
-$ cd quizzie
+$ git clone https://github.com/jugaldb/Quizzie-IWP
+$ cd Quizzie-IWP
 $ npm install
 $ npm run dev
 ```
+<br>
 
-## Contributors
-<table>
-<tr align="center">
+## UI Screenshots
+<br>
+<img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
+<br>
+<br>
 
+## Tech Stacks / Tools used
 
-<td>
-
-Jugal Bhatt
-
-<p align="center">
-<img src = "https://i.ibb.co/ncMD01G/Jugal-Bhatt.jpg" width="150" height="150" alt="Jugal Bhatt (Insert Your Image Link In Src">
+<p>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/nodejs.png" height=40 hspace=20>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/typescript.png" height=40 hspace=20>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/css.png" height=40 hspace=20>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/html.png" height=40 hspace=20>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/mongodb.png" height=40 hspace=20>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/javascript.png" height=40 hspace=20>
 </p>
-<p align="center">
-<a href = "https://github.com/jugaldb"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/jugal-bhatt14/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
-</td>
 
+<br>
 
-<td>
+## Contributing
 
-Sarthak Bhardwaj
+Any contributions you make are **greatly appreciated**.
 
-<p align="center">
-<img src = "https://avatars0.githubusercontent.com/u/28906009?s=400&u=5e6a38b0cf9a63bab372c98d2e4ed9029939ca61&v=4" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
-</p>
-<p align="center">
-<a href = "https://github.com/Sarthakbh321"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/sarthak-bharadwaj-8552b5110/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
-</td>
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the Branch (`git push origin feature/NewFeature`)
+5. Open a Pull Request
 
-
-
-
-</tr>
-  </table>
+<br>
 
 ## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)<br>
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+The project is distributed under the MIT License. See [LICENSE](https://github.com/jugaldb/Quizzie-IWP/blob/master/LICENSE) for more information.
 
-<p align="center">
-	With :heart: by <a href="http://www.codechefvit.com" target="_blank">CodeChef-VIT</a>
-</p>
+<br>
+
