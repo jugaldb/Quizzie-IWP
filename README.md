@@ -1,12 +1,6 @@
 <code>
   <h1 align="center">Quizzie - The Quiz Management System</h1>
 </code>
-
-<div align="center">
-  <img src="https://img.shields.io/github/repo-size/jugaldb/Quizzie-IWP?logo=github" hspace="5">
-  <img src="https://img.shields.io/github/license/jugaldb/Quizzie-IWP" hspace="5">
-  <img src="https://img.shields.io/github/last-commit/jugaldb/Quizzie-IWP?logo=git">
-</div>
 <br>
 
 
