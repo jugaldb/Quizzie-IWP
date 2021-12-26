@@ -38,12 +38,6 @@ $ npm run dev
 ```
 <br>
 
-## UI Screenshots
-<br>
-<img src="https://i.ibb.co/X7JjhYG/Screenshot-100.png" alt="Project Screenshots">
-<br>
-<br>
-
 ## Tech Stacks / Tools used
 
 <p>
