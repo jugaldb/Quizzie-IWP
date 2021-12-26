@@ -68,7 +68,7 @@ Any contributions you make are **greatly appreciated**.
 
 The project is distributed under the MIT License. See [LICENSE](https://github.com/jugaldb/Quizzie-IWP/blob/master/LICENSE) for more information.
 
-slides: [Gumroad](https://jugaldb.gumroad.com/l/rhcpk?_gl=1*wmqf44*_ga*MTY0MTkzNDc0Ny4xNjQwNTM0MTIw*_ga_6LJN6D94N6*MTY0MDUzNDE0Ni4xLjEuMTY0MDUzNDcyNi4w)
+slides: [Gumroad](https://jugaldb.gumroad.com/l/rhcpk)
 
 <br>
 
